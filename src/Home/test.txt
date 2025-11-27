@@ -1,0 +1,18 @@
+HOME FOLDER
+============
+
+Purpose: Home page specific components and logic
+
+Use for:
+- Home page layout
+- Home page sections (Hero, Features, Products, etc.)
+- Home page specific components
+- Home page styling
+- Home page logic and state management
+
+Example files to create:
+- Home.jsx - Main home page component
+- Home.css - Home page styles
+- HeroSection.jsx - Hero banner section
+- FeaturedProducts.jsx - Featured products section
+- Testimonials.jsx - Customer testimonials section

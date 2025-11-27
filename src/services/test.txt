@@ -1,0 +1,22 @@
+SERVICES FOLDER
+================
+
+Purpose: Business logic and external service integration
+
+Use for:
+- Authentication service
+- User service
+- Product service
+- Order service
+- Data transformation logic
+- Business logic
+- External service integration
+- API response formatting
+
+Example files to create:
+- authService.js - Authentication logic
+- userService.js - User management logic
+- productService.js - Product management logic
+- orderService.js - Order management logic
+- storageService.js - Storage operations
+- notificationService.js - Notification handling

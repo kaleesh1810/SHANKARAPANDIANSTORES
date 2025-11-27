@@ -1,0 +1,21 @@
+CONTEXT FOLDER
+===============
+
+Purpose: React Context API setup for state management
+
+Use for:
+- Global state providers
+- Context creation
+- Theme context
+- Authentication context
+- User context
+- App-wide state management
+- Context consumers/hooks
+
+Example files to create:
+- AuthContext.jsx - Authentication context
+- ThemeContext.jsx - Theme/dark mode context
+- UserContext.jsx - User information context
+- NotificationContext.jsx - Notification state
+- useAuth.js - Custom hook for auth context
+- useTheme.js - Custom hook for theme context

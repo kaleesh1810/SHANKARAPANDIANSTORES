@@ -1,0 +1,21 @@
+HOOKS FOLDER
+=============
+
+Purpose: Custom React hooks
+
+Use for:
+- Custom hooks for logic reusability
+- Data fetching hooks
+- Form handling hooks
+- Local storage hooks
+- Authentication hooks
+- Custom state management hooks
+
+Example files to create:
+- useAuth.js - Authentication hook
+- useFetch.js - Data fetching hook
+- useLocalStorage.js - Local storage hook
+- useForm.js - Form handling hook
+- useDebounce.js - Debounce hook
+- useWindowSize.js - Window resize hook
+- useClickOutside.js - Click outside detection

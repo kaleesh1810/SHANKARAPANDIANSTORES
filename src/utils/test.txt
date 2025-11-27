@@ -1,0 +1,24 @@
+UTILS FOLDER
+=============
+
+Purpose: Utility functions and helpers
+
+Use for:
+- Helper functions
+- Constants
+- Formatters (date, currency, etc.)
+- Validators
+- Common logic
+- Data transformation utilities
+- String manipulation utilities
+- Math utilities
+
+Example files to create:
+- constants.js - App-wide constants
+- formatters.js - Date, currency, number formatting
+- validators.js - Form and data validators
+- helpers.js - General helper functions
+- dateUtils.js - Date manipulation utilities
+- stringUtils.js - String utilities
+- arrayUtils.js - Array manipulation utilities
+- localStorage.js - Local storage utilities

@@ -1,0 +1,23 @@
+LAYOUTS FOLDER
+===============
+
+Purpose: Layout components (wrappers for different pages)
+
+Use for:
+- Main layout wrapper
+- Sidebar layout
+- Dashboard layout
+- Admin layout
+- Authentication layout
+- Page structure templates
+- Shared layout elements
+
+Structure suggestion:
+- Create subfolders for different layout types
+
+Example files to create:
+- MainLayout.jsx - Main page layout
+- DashboardLayout.jsx - Dashboard layout
+- AdminLayout.jsx - Admin panel layout
+- AuthLayout.jsx - Authentication pages layout
+- SidebarLayout.jsx - Layout with sidebar

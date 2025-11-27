@@ -1,0 +1,19 @@
+ROUTES FOLDER
+==============
+
+Purpose: Routing configuration
+
+Use for:
+- Route definitions
+- Route guards/middleware
+- Protected routes
+- Navigation setup
+- Route constants
+- Route configuration
+
+Example files to create:
+- routes.js - Route configuration
+- PrivateRoute.jsx - Protected route component
+- PublicRoute.jsx - Public route wrapper
+- RouteGuards.js - Route guard logic
+- navigationConfig.js - Navigation structure

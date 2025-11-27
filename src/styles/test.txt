@@ -1,0 +1,22 @@
+STYLES FOLDER
+==============
+
+Purpose: Global styles and CSS files
+
+Use for:
+- Global CSS
+- CSS variables
+- Theme colors and variables
+- Reset/normalize styles
+- Typography styles
+- Layout utilities
+- Tailwind configuration (if using Tailwind)
+- Shared CSS utilities
+
+Example files to create:
+- index.css - Global base styles
+- variables.css - CSS variables and theme
+- utilities.css - Utility classes
+- animations.css - Animation keyframes
+- responsive.css - Responsive breakpoints
+- tailwind.config.js - Tailwind configuration

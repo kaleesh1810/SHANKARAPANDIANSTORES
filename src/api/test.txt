@@ -1,0 +1,19 @@
+API FOLDER
+==========
+
+Purpose: API integration and HTTP requests
+
+Use for:
+- API endpoints configuration
+- HTTP client setup (axios, fetch)
+- API request/response handling
+- API constants and configuration
+- API error handling
+- Authentication headers setup
+
+Example files to create:
+- apiClient.js - HTTP client configuration
+- endpoints.js - API endpoints constants
+- authApi.js - Authentication API calls
+- productApi.js - Product API calls
+- userApi.js - User API calls

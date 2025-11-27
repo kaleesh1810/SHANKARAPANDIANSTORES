@@ -1,0 +1,25 @@
+COMPONENTS FOLDER
+==================
+
+Purpose: Reusable React components
+
+Use for:
+- Button, Input, Form components
+- Card, Modal, Dialog components
+- Header, Footer, Navbar components
+- Loading spinners, skeletons
+- Toast notifications
+- Any shared/reusable UI components
+- Component-specific styling
+
+Structure suggestion:
+- Create subfolders for component types (Forms, Buttons, Modals, etc.)
+- Each component should have its own folder with .jsx and .css files
+
+Example files to create:
+- Button/Button.jsx
+- Input/Input.jsx
+- Card/Card.jsx
+- Modal/Modal.jsx
+- Header/Header.jsx
+- Footer/Footer.jsx
