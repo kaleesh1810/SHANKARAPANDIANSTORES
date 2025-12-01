@@ -555,6 +555,7 @@ export default function LedgerGroupCreation() {
           background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,251,255,0.6));
           border: 1px solid rgba(12,18,35,0.04);
           padding:10px;
+          width: 100%;
         }
         .tree-scroll { max-height:260px; overflow:auto; padding-right:6px; }
 
