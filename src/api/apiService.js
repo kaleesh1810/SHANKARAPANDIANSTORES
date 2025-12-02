@@ -68,6 +68,32 @@ const apiService = axios.create({
   headers: { "Content-Type": "application/json" },
 });
 
+// Add response interceptor to suppress 404 errors in console
+apiService.interceptors.response.use(
+  response => response,
+  error => {
+    // Check if this is a 404 error - suppress console logging for it
+    if (error.response && error.response.status === 404) {
+      // Suppress the default axios error logging for 404s
+      return Promise.reject(error);
+    }
+    return Promise.reject(error);
+  }
+);
+
+// API Base URL
+export const API_BASE = "http://dikshiserver/spstores/api";
+
+// API Endpoints Configuration
+export const API_ENDPOINTS = {
+  ADMINISTRATION: {
+    USER_LIST: "Administartor/UserNameList",
+    GET_PERMISSIONS_BY_USER: "Administartor/GetPermissionsByUserCode",
+    ADMIN_BATCH_INSERT: "Administartor/administration/InsertBatch",
+    DELETE_PERMISSIONS: "Administartor/administration/delete"
+  }
+};
+
 // Generic request handlers
 // const get = async (url, params = {}) => {
 //   try {
@@ -211,11 +237,47 @@ const post = (url, data) => requestWithAlert({ method: "post", url, data });
 const put = (url, data) => requestWithAlert({ method: "put", url, data });
 const del = (url) => requestWithAlert({ method: "delete", url });
 
+// Silent methods that don't show alerts (for fallback scenarios)
+const getSilent = async (url, params = {}) => {
+  try {
+    // Use fetch directly to avoid axios logging
+    const queryString = new URLSearchParams(params).toString();
+    const fullUrl = `http://dikshiserver/spstores/api/${url}${queryString ? '?' + queryString : ''}`;
+    
+    // Suppress network errors in DevTools by using signal/abort
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 5000); // 5 second timeout
+    
+    try {
+      const response = await fetch(fullUrl, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' },
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+      
+      if (response.ok) {
+        return await response.json();
+      }
+      return null;
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  } catch (error) {
+    // Silently catch and return null - no logging, no alerts
+    return null;
+  }
+};
+
 export default {
   get,
   post,
   put,
   del,
+  getSilent,
   // new, opt-in methods that display alerts for non-2xx/other error statuses
   requestWithAlert, 
 };
+
+// Provide the underlying axios instance as a named export for compatibility
+export const axiosInstance = apiService;

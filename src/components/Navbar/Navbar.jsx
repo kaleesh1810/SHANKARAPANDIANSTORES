@@ -78,14 +78,16 @@ const Navbar = () => {
     { name: 'Item Creation', path: '/masters/item-creation', icon: <BuildOutlined /> },
     { name: 'Unit Creation', path: '/masters/unit-creation', icon: <TeamOutlined /> },
     { name: 'Salesman Creation', path: '/masters/salesman-creation', icon: <UserOutlined /> },
-    { name: 'Company Creation', path: '/masters/company-creation', icon: <BuildOutlined /> }
+    { name: 'Company Creation', path: '/masters/company-creation', icon: <BuildOutlined /> },
+    { name: 'Administration', path: '/Administration', icon: <BuildOutlined /> }
   ];
 
   const transactionItems = [
     { name: 'Sales Invoice', path: '/transactions/sales-invoice', icon: <FileTextOutlined /> },
     { name: 'Purchase Invoice', path: '/transactions/purchase-invoice', icon: <DollarOutlined /> },
     { name: 'Sales Return', path: '/transactions/sales-return', icon: <FileTextOutlined /> },
-    { name: 'Purchase Return', path: '/transactions/purchase-return', icon: <DollarOutlined /> }
+    { name: 'Purchase Return', path: '/transactions/purchase-return', icon: <DollarOutlined /> },
+    { name: 'Sales Return', path: '/SalesReturn', icon: <FileTextOutlined /> }
   ];
 
   // Desktop hover handlers
